@@ -1,0 +1,46 @@
+
+:root {
+  --color-primary: #1677ff;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #666;
+  font-size:10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  list-style: none;
+text-decoration: none;
+-webkit-user-drag: none;
+}
+
+.btn {
+  display: inline-block;
+  color:var(--color-primary);
+  font-size: 1.6rem;
+  border: 1px solid black;
+  /* border不另外选颜色，默认其字体的颜色，即--color-primary */
+  border-radius: 5rem;
+  padding: 2rem 4rem;
+  cursor: pointer;
+  box-shadow: 
+  4px 3px 2px rgb(73, 13, 157),
+  -3px -3px 2px rgb(176, 228, 44);
+  transition: all 200ms ease-in-outcubic-bezier(1, 0.01, 0, 1.08);
+} 
+
+
+.btn:hover:hover {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.btn:active {
+ color: var(--color-white);
+ background-color: var(--color-black);
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+
